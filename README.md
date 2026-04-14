@@ -87,7 +87,7 @@ This uses the sample paired-end reads in `test_data/` through `assets/test_sampl
 
 ## Input files
 
-o run this pipeline on your own paired-end reads, place paired-end FASTQ files in `test_data/` and list them in `assets/test_samplesheet.csv`.
+To run this pipeline on your own paired-end reads, place paired-end FASTQ files in `test_data/` and list them in `assets/test_samplesheet.csv`.
 
 Example:
 
