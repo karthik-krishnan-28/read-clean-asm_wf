@@ -1,2 +1,2 @@
 sample,r1,r2
-PAmini,test_data/PAmini_R1.fastq.gz,test_data/PAmini_R2.fastq.gz
+PA01,test_data/SRR28760303_1.fastq.gz,test_data/SRR28760303_2.fastq.gz

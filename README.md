@@ -1,11 +1,11 @@
-# pa-simple-wf
+# read-clean-asm_wf
 
-A minimal **Nextflow DSL2** workflow for **BIOL7210** that satisfies the required sequential and parallel structure:
+A minimal **Nextflow DSL2** workflow submitted for consideration by Dr. Chris Gulvik for te **BIOL7210** workflow lab.
 
-- **Sequential:** `SRA (optional) -> fastp`
+- **Sequential:** `local paired-end FASTQ reads -> fastp`
 - **Parallel after fastp:** `skesa` and `seqkit`
 
-This repo is intentionally simple so it is easy to explain, run, and grade.
+This repo is intentionally simple so it is easy to explain and run.
 
 ---
 
@@ -17,7 +17,7 @@ This repo is intentionally simple so it is easy to explain, run, and grade.
 
 ## What the pipeline does
 
-1. **Fetch raw paired-end reads from SRA** with `fasterq-dump` (optional for real runs)
+1. Reads paired-end FASTQ files listed in `assets/test_samplesheet.csv`
 2. **Clean reads** with `fastp`
 3. From the cleaned reads, run two jobs **in parallel**
    - **Assemble** with `skesa`
@@ -25,14 +25,12 @@ This repo is intentionally simple so it is easy to explain, run, and grade.
 
 ---
 
-## Why this satisfies the assignment
+## Features
 
-- Uses **genomics software**
-- Includes **sequential processing**: fetch/input -> fastp
+- Includes **sequential processing**: local input FASTQ -> fastp
 - Includes **parallel processing**: fastp output is sent to skesa **and** seqkit at the same time
 - Runs **locally** by default
 - Includes **test data in the repo**
-- Uses **Conda through Nextflow** so users do **not** need to pre-install each tool manually
 
 ---
 
@@ -43,7 +41,6 @@ pa-simple-wf/
 ├── main.nf
 ├── nextflow.config
 ├── modules/
-│   ├── fetch_sra.nf
 │   ├── fastp.nf
 │   ├── skesa.nf
 │   └── seqkit_stats.nf
@@ -51,8 +48,8 @@ pa-simple-wf/
 │   ├── test_samplesheet.csv
 │   └── workflow_diagram.png
 ├── test_data/
-│   ├── PAmini_R1.fastq.gz
-│   └── PAmini_R2.fastq.gz
+│   ├── SRR28760303_1.fastq.gz
+│   └── SRR28760303_2.fastq.gz
 ├── scripts/
 │   └── report_versions.sh
 └── README.md
@@ -64,43 +61,54 @@ pa-simple-wf/
 
 Fill in this section with the exact output from `scripts/report_versions.sh` before submission.
 
-- **Nextflow version used:** replace with output of `scripts/report_versions.sh`
-- **Package manager and version:** replace with output of `scripts/report_versions.sh`
-- **OS used:** replace with output of `scripts/report_versions.sh`
-- **Architecture used:** replace with output of `scripts/report_versions.sh`
+- **Nextflow version used:** 25.10.4
+- **Package manager and version:** Docker 29.2.1 
+- **OS used:** Darwin
+- **Architecture used:** arm64
 
-Example helper command:
-
-```bash
-bash scripts/report_versions.sh
-```
-
-Also note your profile when submitting. For example, I recommend:
-
-- Package manager: **Conda**
-- Nextflow profile: **`-profile test,conda`** for the built-in test
+## Software containers used
+- fastp: quay.io/biocontainers/fastp:1.3.2--h43da1c4_0
+- skesa: quay.io/biocontainers/skesa:2.5.1--hdcf5f25_0
+- seqkit: quay.io/biocontainers/seqkit:2.13.0--he881be0_0
 
 ---
 
-## Quick test run (3 commands)
+## Instructions for running
 
-After Nextflow itself is installed, the grader should be able to copy/paste these **3 commands**:
+After Nextflow and Docker are installed, copy/paste these **3 commands**:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
-nextflow run main.nf -profile test,conda
+git clone https://github.com/karthik-krishnan-28/read-clean-asm_wf.git
+cd read-clean-asm_wf
+nextflow run main.nf -profile docker
 ```
 
-This uses the tiny paired-end test reads in `test_data/` through `assets/test_samplesheet.csv`.
+This uses the sample paired-end reads in `test_data/` through `assets/test_samplesheet.csv`.
 
 ---
+
+## Input files
+
+o run this pipeline on your own paired-end reads, place paired-end FASTQ files in `test_data/` and list them in `assets/test_samplesheet.csv`.
+
+Example:
+
+```csv
+sample,r1,r2
+PA01,test_data/PA01_R1.fastq.gz,test_data/PA01_R2.fastq.gz
+PA02,test_data/PA02_R1.fastq.gz,test_data/PA02_R2.fastq.gz
+```
+
+Current test example in this repo:
+```csv
+sample,r1,r2
+PA01,test_data/SRR28760303_1.fastq.gz,test_data/SRR28760303_2.fastq.gz
+```
 
 ## Expected outputs
 
 Inside `results/`:
 
-- `01_sra/` (only for real SRA runs)
 - `02_fastp/`
   - cleaned FASTQ files
   - fastp HTML report
@@ -115,41 +123,3 @@ Inside `results/`:
   - `pipeline_timeline.html`
   - `pipeline_dag.html`
 
----
-
-## Running on real SRA accessions
-
-Example:
-
-```bash
-nextflow run main.nf -profile conda --sra_ids 'SRR000001,SRR000002'
-```
-
-If you only want to run one sample:
-
-```bash
-nextflow run main.nf -profile conda --sra_ids 'SRR000001'
-```
-
----
-
-## Notes for your GitHub submission
-
-- Keep this repo public or accessible to your instructor.
-- In the README, explicitly say this repo is for **BIOL7210**.
-- Make sure your commit history is under your GitHub username.
-- Before submitting, run `bash scripts/report_versions.sh` and paste the exact versions into the README.
-
----
-
-## Simple explanation of the logic
-
-The important design choice is that **fastp is the center of the workflow**:
-
-- raw reads go **into fastp**
-- cleaned reads come **out of fastp**
-- those cleaned reads are then sent to:
-  - **skesa** for assembly
-  - **seqkit** for statistics
-
-That gives you the required **one sequential step** and **one parallel fork** with the least possible complexity.

@@ -2,8 +2,6 @@ process SKESA {
     tag "$sample"
     publishDir "${params.outdir}/03_skesa", mode: 'copy'
 
-    conda 'bioconda::skesa=2.5.1'
-
     input:
     tuple val(sample), path(r1), path(r2)
 

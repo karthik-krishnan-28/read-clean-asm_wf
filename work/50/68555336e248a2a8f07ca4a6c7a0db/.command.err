@@ -1,0 +1,65 @@
+Unable to find image 'quay.io/biocontainers/seqkit:2.13.0--he881be0_0' locally
+2.13.0--he881be0_0: Pulling from biocontainers/seqkit
+36818f240111: Pulling fs layer
+36818f240111: Download complete
+36818f240111: Pull complete
+Digest: sha256:0e14f53b486c6b6e199e525f3f1e7494b59b580f835f7835e497b46f99267b6a
+Status: Downloaded newer image for quay.io/biocontainers/seqkit:2.13.0--he881be0_0
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+processed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  0 / 2 [------] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  1 / 2 [==>---] ETA: 0s
+[1A[Jprocessed files:  2 / 2 [======] ETA: 0s
+[1A[Jprocessed files:  2 / 2 [] ETA: 0s. done
+[1A[Jprocessed files:  2 / 2 [] ETA: 0s. done

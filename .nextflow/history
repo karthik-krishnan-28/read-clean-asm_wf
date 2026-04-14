@@ -1,0 +1,11 @@
+2026-04-14 13:28:50	1.5s	nice_cori	ERR	c4044e9a204411b194493b0186c86b54	64081023-6640-4476-8a55-5db499d68440	nextflow run main.nf
+2026-04-14 13:31:47	1.7s	agitated_agnesi	ERR	c4044e9a204411b194493b0186c86b54	650dd855-4b5a-424e-9d92-1787de08d7a2	nextflow run main.nf
+2026-04-14 13:32:31	1.5s	shrivelled_woese	ERR	c4044e9a204411b194493b0186c86b54	7951ffdf-c58c-4c31-9793-db9d5e446258	nextflow run main.nf
+2026-04-14 13:33:06	2.2s	marvelous_leakey	ERR	c4044e9a204411b194493b0186c86b54	768227bf-f0f0-45ec-81d2-bc335843a643	nextflow run main.nf
+2026-04-14 13:35:39	2s	sick_monod	ERR	c4044e9a204411b194493b0186c86b54	667e267e-9044-4442-ad6c-5dfa0a6e4e7d	nextflow run main.nf
+2026-04-14 13:37:33	2.3s	lonely_koch	ERR	c4044e9a204411b194493b0186c86b54	4ad5c5eb-7a05-4976-9702-5f7eff58f495	nextflow run main.nf
+2026-04-14 13:38:49	-	goofy_tuckerman	-	2cd0ef03a82839437c41b201004c69cf	562eac1a-cff0-4a69-b54a-3204315a3c76	nextflow run main.nf
+2026-04-14 13:39:14	-	disturbed_boltzmann	-	2cd0ef03a82839437c41b201004c69cf	c66f83ab-57f8-484e-87cc-6ca10d49d80a	nextflow run main.nf
+2026-04-14 13:39:27	2.2s	cheesy_rosalind	ERR	1ca906e076ba7b6dd58e6409a5d15ddf	e90be8f0-80fd-4204-9bce-4bb5634f5929	nextflow run main.nf
+2026-04-14 13:40:29	2.1s	hungry_goldstine	ERR	c4044e9a204411b194493b0186c86b54	0b7d5ad1-7f53-455a-86fb-2e898cec31a2	nextflow run main.nf -profile docker
+2026-04-14 13:41:11	2m 17s	small_perlman	OK	c4044e9a204411b194493b0186c86b54	23748d77-fc67-4f69-a9d0-be2dec0e1577	nextflow run main.nf -profile docker

@@ -2,8 +2,6 @@ process FASTP {
     tag "$sample"
     publishDir "${params.outdir}/02_fastp", mode: 'copy'
 
-    conda 'bioconda::fastp=0.23.4'
-
     input:
     tuple val(sample), path(r1), path(r2)
 

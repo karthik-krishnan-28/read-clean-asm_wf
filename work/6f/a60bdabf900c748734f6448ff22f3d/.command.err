@@ -1,0 +1,364 @@
+Unable to find image 'quay.io/biocontainers/skesa:2.5.1--hdcf5f25_0' locally
+2.5.1--hdcf5f25_0: Pulling from biocontainers/skesa
+642efca944a0: Pulling fs layer
+ddf72eb7b34e: Pulling fs layer
+bd9ddc54bea9: Pulling fs layer
+bd9ddc54bea9: Already exists
+642efca944a0: Download complete
+bd9ddc54bea9: Pull complete
+642efca944a0: Pull complete
+ddf72eb7b34e: Download complete
+ddf72eb7b34e: Pull complete
+Digest: sha256:9af5d78d5eee2beb65c5270524861997e36de933a74db3ebcc3565cade190510
+Status: Downloaded newer image for quay.io/biocontainers/skesa:2.5.1--hdcf5f25_0
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+skesa --reads PA01.clean_R1.fastq.gz,PA01.clean_R2.fastq.gz --cores 2 --vector_percent 1 
+
+Total mates: 1395814 Paired reads: 697907
+Reads acquired in  5.766235s wall, 5.740000s user + 0.020000s system = 5.760000s CPU (99.9%)
+Adapters clip is disabled
+
+Kmer len: 21
+Raw kmers: 77327129 Memory needed (GB): 1.48468 Memory available (GB): 29.9202 1 cycle(s) will be performed
+Distinct kmers: 5072368
+Kmer count in  5.034609s wall, 9.890000s user + 0.170000s system = 10.060000s CPU (199.8%)
+Uniq kmers merging in  0.070053s wall, 0.090000s user + 0.020000s system = 0.110000s CPU (157.0%)
+Kmers branching in  3.458490s wall, 6.850000s user + 0.000000s system = 6.850000s CPU (198.1%)
+
+Average read length: 75
+Genome size estimate: 4693564
+
+Kmer: 21 Graph size: 5072368 Contigs in: 0
+Valley: 3
+
+Mark used kmers in  0.000110s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Kmers in multiple/single contigs: 0 0
+Fragments before: 1940 5017431
+Fragments after: 1926 5017431
+New seeds: 1499
+New seeds in  2.262139s wall, 4.490000s user + 0.000000s system = 4.490000s CPU (198.5%)
+Fragments before: 2998 62958
+Fragments after: 2998 62958
+Connectors: 0 Extenders: 2998
+Connections and extensions in  0.533408s wall, 1.050000s user + 0.000000s system = 1.050000s CPU (196.8%)
+Contigs out: 1499 Genome: 4956488 N50: 8013 L50: 187
+Assembled in  2.817467s wall, 5.560000s user + 0.000000s system = 5.560000s CPU (197.3%)
+
+
+Kmer len: 35
+Raw kmers: 57785763 Memory needed (GB): 1.66423 Memory available (GB): 29.8289 1 cycle(s) will be performed
+Distinct kmers: 5071129
+Kmer count in  4.963872s wall, 9.670000s user + 0.250000s system = 9.920000s CPU (199.8%)
+Uniq kmers merging in  0.083712s wall, 0.120000s user + 0.000000s system = 0.120000s CPU (143.3%)
+
+Average count: 14.0052 Max kmer: 35
+Connected: 8109 ambiguously connected: 837 from 10000 mate pairs
+Connect pairs in  12.385716s wall, 24.760000s user + 0.010000s system = 24.770000s CPU (200.0%)
+
+N50 for inserts: 395
+
+Seed kmers: 0
+Cleaned reads: 225130
+Reads for connection: 166172
+Internal reads: 19908
+Reads cleaned in  2.853960s wall, 5.670000s user + 0.020000s system = 5.690000s CPU (199.4%)
+
+Kmer len: 23
+Raw kmers: 12030995 Memory needed (GB): 0.230995 Memory available (GB): 29.8426 1 cycle(s) will be performed
+Distinct kmers: 1198704
+Kmer count in  0.715852s wall, 1.400000s user + 0.020000s system = 1.420000s CPU (198.4%)
+Uniq kmers merging in  0.018655s wall, 0.030000s user + 0.000000s system = 0.030000s CPU (160.8%)
+Kmers branching in  0.636174s wall, 1.220000s user + 0.000000s system = 1.220000s CPU (191.8%)
+Kmer: 23 Graph size: 1198704 Contigs in: 1499
+Valley: 0
+
+Mark used kmers in  0.546721s wall, 1.090000s user + 0.000000s system = 1.090000s CPU (199.4%)
+Kmers in multiple/single contigs: 0 1054951
+Fragments before: 2937 100121
+Fragments after: 2930 100121
+New seeds: 40
+New seeds in  0.295069s wall, 0.560000s user + 0.000000s system = 0.560000s CPU (189.8%)
+Fragments before: 3077 74609
+Fragments after: 2592 74609
+Connectors: 485 Extenders: 2107
+Connections and extensions in  0.497993s wall, 0.980000s user + 0.000000s system = 0.980000s CPU (196.8%)
+Contigs out: 1054 Genome: 4973823 N50: 12995 L50: 117
+Assembled in  1.345304s wall, 2.640000s user + 0.000000s system = 2.640000s CPU (196.2%)
+
+Seed kmers: 0
+Cleaned reads: 163996
+Reads for connection: 122954
+Internal reads: 13788
+Reads cleaned in  1.732932s wall, 3.450000s user + 0.010000s system = 3.460000s CPU (199.7%)
+
+Kmer len: 25
+Raw kmers: 8434611 Memory needed (GB): 0.161945 Memory available (GB): 29.8724 1 cycle(s) will be performed
+Distinct kmers: 843043
+Kmer count in  0.503488s wall, 0.980000s user + 0.010000s system = 0.990000s CPU (196.6%)
+Uniq kmers merging in  0.010377s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (192.7%)
+Kmers branching in  0.402796s wall, 0.790000s user + 0.000000s system = 0.790000s CPU (196.1%)
+Kmer: 25 Graph size: 843043 Contigs in: 1054
+Valley: 0
+
+Mark used kmers in  0.486232s wall, 0.970000s user + 0.000000s system = 0.970000s CPU (199.5%)
+Kmers in multiple/single contigs: 0 723059
+Fragments before: 2251 78095
+Fragments after: 2248 78095
+New seeds: 23
+New seeds in  0.241584s wall, 0.460000s user + 0.000000s system = 0.460000s CPU (190.4%)
+Fragments before: 2152 56830
+Fragments after: 1962 56830
+Connectors: 190 Extenders: 1772
+Connections and extensions in  0.461947s wall, 0.910000s user + 0.000000s system = 0.910000s CPU (197.0%)
+Contigs out: 887 Genome: 4983391 N50: 16372 L50: 93
+Assembled in  1.193640s wall, 2.350000s user + 0.000000s system = 2.350000s CPU (196.9%)
+
+Seed kmers: 0
+Cleaned reads: 139720
+Reads for connection: 105212
+Internal reads: 11556
+Reads cleaned in  1.547215s wall, 3.070000s user + 0.010000s system = 3.080000s CPU (199.1%)
+
+Kmer len: 27
+Raw kmers: 6905728 Memory needed (GB): 0.13259 Memory available (GB): 29.8559 1 cycle(s) will be performed
+Distinct kmers: 698917
+Kmer count in  0.410702s wall, 0.810000s user + 0.000000s system = 0.810000s CPU (197.2%)
+Uniq kmers merging in  0.008726s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (114.6%)
+Kmers branching in  0.334004s wall, 0.660000s user + 0.000000s system = 0.660000s CPU (197.6%)
+Kmer: 27 Graph size: 698917 Contigs in: 887
+Valley: 0
+
+Mark used kmers in  0.474590s wall, 0.950000s user + 0.000000s system = 0.950000s CPU (200.2%)
+Kmers in multiple/single contigs: 0 589569
+Fragments before: 1960 67154
+Fragments after: 1954 67154
+New seeds: 9
+New seeds in  0.198043s wall, 0.370000s user + 0.000000s system = 0.370000s CPU (186.8%)
+Fragments before: 1790 48860
+Fragments after: 1702 48860
+Connectors: 88 Extenders: 1614
+Connections and extensions in  0.457083s wall, 0.910000s user + 0.000000s system = 0.910000s CPU (199.1%)
+Contigs out: 808 Genome: 4988212 N50: 18340 L50: 85
+Assembled in  1.132948s wall, 2.240000s user + 0.000000s system = 2.240000s CPU (197.7%)
+
+Seed kmers: 0
+Cleaned reads: 127892
+Reads for connection: 96752
+Internal reads: 10506
+Reads cleaned in  1.524290s wall, 3.030000s user + 0.010000s system = 3.040000s CPU (199.4%)
+
+Kmer len: 29
+Raw kmers: 6064762 Memory needed (GB): 0.116443 Memory available (GB): 29.8402 1 cycle(s) will be performed
+Distinct kmers: 626226
+Kmer count in  0.362171s wall, 0.710000s user + 0.000000s system = 0.710000s CPU (196.0%)
+Uniq kmers merging in  0.007812s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (128.0%)
+Kmers branching in  0.293417s wall, 0.570000s user + 0.000000s system = 0.570000s CPU (194.3%)
+Kmer: 29 Graph size: 626226 Contigs in: 808
+Valley: 0
+
+Mark used kmers in  0.461504s wall, 0.920000s user + 0.000000s system = 0.920000s CPU (199.3%)
+Kmers in multiple/single contigs: 0 521009
+Fragments before: 1807 64677
+Fragments after: 1802 64677
+New seeds: 9
+New seeds in  0.178555s wall, 0.340000s user + 0.000000s system = 0.340000s CPU (190.4%)
+Fragments before: 1632 46832
+Fragments after: 1569 46832
+Connectors: 63 Extenders: 1506
+Connections and extensions in  0.446797s wall, 0.890000s user + 0.000000s system = 0.890000s CPU (199.2%)
+Contigs out: 754 Genome: 4992790 N50: 20413 L50: 78
+Assembled in  1.089722s wall, 2.150000s user + 0.000000s system = 2.150000s CPU (197.3%)
+
+Seed kmers: 0
+Cleaned reads: 119578
+Reads for connection: 90962
+Internal reads: 9654
+Reads cleaned in  1.422091s wall, 2.830000s user + 0.010000s system = 2.840000s CPU (199.7%)
+
+Kmer len: 31
+Raw kmers: 5430965 Memory needed (GB): 0.104275 Memory available (GB): 29.825 1 cycle(s) will be performed
+Distinct kmers: 574178
+Kmer count in  0.321103s wall, 0.630000s user + 0.000000s system = 0.630000s CPU (196.2%)
+Uniq kmers merging in  0.007310s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (136.8%)
+Kmers branching in  0.265329s wall, 0.520000s user + 0.000000s system = 0.520000s CPU (196.0%)
+Kmer: 31 Graph size: 574178 Contigs in: 754
+Valley: 0
+
+Mark used kmers in  0.451261s wall, 0.910000s user + 0.000000s system = 0.910000s CPU (201.7%)
+Kmers in multiple/single contigs: 0 472565
+Fragments before: 1663 61985
+Fragments after: 1660 61985
+New seeds: 8
+New seeds in  0.160974s wall, 0.310000s user + 0.000000s system = 0.310000s CPU (192.6%)
+Fragments before: 1520 45722
+Fragments after: 1459 45722
+Connectors: 61 Extenders: 1398
+Connections and extensions in  0.458681s wall, 0.910000s user + 0.000000s system = 0.910000s CPU (198.4%)
+Contigs out: 701 Genome: 4997444 N50: 21930 L50: 71
+Assembled in  1.073573s wall, 2.130000s user + 0.000000s system = 2.130000s CPU (198.4%)
+
+Seed kmers: 0
+Cleaned reads: 111474
+Reads for connection: 85100
+Internal reads: 8905
+Reads cleaned in  1.366480s wall, 2.710000s user + 0.010000s system = 2.720000s CPU (199.1%)
+
+Kmer len: 33
+Raw kmers: 4840073 Memory needed (GB): 0.139394 Memory available (GB): 29.8106 1 cycle(s) will be performed
+Distinct kmers: 525993
+Kmer count in  0.390368s wall, 0.760000s user + 0.010000s system = 0.770000s CPU (197.2%)
+Uniq kmers merging in  0.008496s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (117.7%)
+Kmers branching in  0.295105s wall, 0.580000s user + 0.000000s system = 0.580000s CPU (196.5%)
+Kmer: 33 Graph size: 525993 Contigs in: 701
+Valley: 0
+
+Mark used kmers in  0.487873s wall, 0.980000s user + 0.000000s system = 0.980000s CPU (200.9%)
+Kmers in multiple/single contigs: 0 428433
+Fragments before: 1536 57664
+Fragments after: 1532 57664
+New seeds: 2
+New seeds in  0.163915s wall, 0.310000s user + 0.000000s system = 0.310000s CPU (189.1%)
+Fragments before: 1402 43908
+Fragments after: 1363 43908
+Connectors: 39 Extenders: 1324
+Connections and extensions in  0.451234s wall, 0.890000s user + 0.000000s system = 0.890000s CPU (197.2%)
+Contigs out: 664 Genome: 5000988 N50: 23174 L50: 64
+Assembled in  1.105741s wall, 2.180000s user + 0.000000s system = 2.180000s CPU (197.2%)
+
+Seed kmers: 0
+Cleaned reads: 105328
+Reads for connection: 80756
+Internal reads: 8359
+Reads cleaned in  1.526918s wall, 3.040000s user + 0.010000s system = 3.050000s CPU (199.7%)
+
+Kmer len: 35
+Raw kmers: 4362239 Memory needed (GB): 0.125632 Memory available (GB): 29.7928 1 cycle(s) will be performed
+Distinct kmers: 484771
+Kmer count in  0.360082s wall, 0.710000s user + 0.010000s system = 0.720000s CPU (200.0%)
+Uniq kmers merging in  0.007932s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (126.1%)
+Kmers branching in  0.263901s wall, 0.520000s user + 0.000000s system = 0.520000s CPU (197.0%)
+Kmer: 35 Graph size: 484771 Contigs in: 664
+Valley: 0
+
+Mark used kmers in  0.475523s wall, 0.950000s user + 0.000000s system = 0.950000s CPU (199.8%)
+Kmers in multiple/single contigs: 0 390134
+Fragments before: 1431 55469
+Fragments after: 1430 55469
+New seeds: 9
+New seeds in  0.148221s wall, 0.280000s user + 0.000000s system = 0.280000s CPU (188.9%)
+Fragments before: 1342 42968
+Fragments after: 1303 42968
+Connectors: 39 Extenders: 1264
+Connections and extensions in  0.448300s wall, 0.890000s user + 0.000000s system = 0.890000s CPU (198.5%)
+Contigs out: 634 Genome: 5004981 N50: 24676 L50: 59
+Assembled in  1.074551s wall, 2.120000s user + 0.000000s system = 2.120000s CPU (197.3%)
+
+Seed kmers: 0
+Cleaned reads: 101130
+Reads for connection: 77632
+Internal reads: 7983
+Reads cleaned in  1.440690s wall, 2.840000s user + 0.010000s system = 2.850000s CPU (197.8%)
+
+Connecting mate pairs using kmer length: 21
+Connected: 9260 ambiguously connected: 18184 from 38816 mate pairs
+Connect pairs in  21.914244s wall, 43.350000s user + 0.000000s system = 43.350000s CPU (197.8%)
+
+Connecting mate pairs using kmer length: 23
+Connected: 681 ambiguously connected: 16509 from 18184 mate pairs
+Connect pairs in  4.937441s wall, 9.690000s user + 0.000000s system = 9.690000s CPU (196.3%)
+
+Connecting mate pairs using kmer length: 25
+Connected: 450 ambiguously connected: 15726 from 16509 mate pairs
+Connect pairs in  4.340626s wall, 8.500000s user + 0.000000s system = 8.500000s CPU (195.8%)
+
+Connecting mate pairs using kmer length: 27
+Connected: 371 ambiguously connected: 15142 from 15726 mate pairs
+Connect pairs in  4.137604s wall, 8.050000s user + 0.000000s system = 8.050000s CPU (194.6%)
+
+Connecting mate pairs using kmer length: 29
+Connected: 499 ambiguously connected: 14386 from 15142 mate pairs
+Connect pairs in  4.094208s wall, 8.030000s user + 0.000000s system = 8.030000s CPU (196.1%)
+
+Connecting mate pairs using kmer length: 31
+Connected: 430 ambiguously connected: 13600 from 14386 mate pairs
+Connect pairs in  3.790100s wall, 7.510000s user + 0.000000s system = 7.510000s CPU (198.1%)
+
+Connecting mate pairs using kmer length: 33
+Connected: 370 ambiguously connected: 12705 from 13600 mate pairs
+Connect pairs in  4.134345s wall, 8.170000s user + 0.000000s system = 8.170000s CPU (197.6%)
+
+Connecting mate pairs using kmer length: 35
+Connected: 345 ambiguously connected: 11873 from 12705 mate pairs
+Connect pairs in  3.580382s wall, 7.140000s user + 0.000000s system = 7.140000s CPU (199.4%)
+Totally connected: 12406
+Added notconnected: 23743
+
+Kmer len: 43
+Raw kmers: 10077794 Memory needed (GB): 0.29024 Memory available (GB): 29.7721 1 cycle(s) will be performed
+Distinct kmers: 526185
+Kmer count in  0.764298s wall, 1.460000s user + 0.040000s system = 1.500000s CPU (196.3%)
+Uniq kmers merging in  0.009331s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (107.2%)
+Kmers branching in  0.288770s wall, 0.560000s user + 0.000000s system = 0.560000s CPU (193.9%)
+Kmer: 43 Graph size: 526185 Contigs in: 634
+Valley: 0
+
+Mark used kmers in  0.500196s wall, 0.990000s user + 0.000000s system = 0.990000s CPU (197.9%)
+Kmers in multiple/single contigs: 0 438070
+Fragments before: 1138 54584
+Fragments after: 1136 54542
+New seeds: 5
+New seeds in  0.119918s wall, 0.210000s user + 0.000000s system = 0.210000s CPU (175.1%)
+Fragments before: 1105 41681
+Fragments after: 1030 41681
+Connectors: 75 Extenders: 955
+Connections and extensions in  0.447376s wall, 0.890000s user + 0.000000s system = 0.890000s CPU (198.9%)
+Contigs out: 564 Genome: 5012022 N50: 29140 L50: 51
+Assembled in  1.070152s wall, 2.100000s user + 0.000000s system = 2.100000s CPU (196.2%)
+
+
+Kmer len: 219
+Raw kmers: 4008327 Memory needed (GB): 0.30784 Memory available (GB): 29.7538 1 cycle(s) will be performed
+Distinct kmers: 381395
+Kmer count in  0.407327s wall, 0.760000s user + 0.030000s system = 0.790000s CPU (193.9%)
+Uniq kmers merging in  0.011584s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (172.7%)
+Kmers branching in  0.265193s wall, 0.520000s user + 0.000000s system = 0.520000s CPU (196.1%)
+Kmer: 219 Graph size: 381395 Contigs in: 564
+Valley: 0
+
+Mark used kmers in  0.612368s wall, 1.220000s user + 0.000000s system = 1.220000s CPU (199.2%)
+Kmers in multiple/single contigs: 0 297918
+Fragments before: 564 55328
+Fragments after: 563 55328
+New seeds: 0
+New seeds in  0.067223s wall, 0.110000s user + 0.000000s system = 0.110000s CPU (163.6%)
+Fragments before: 587 54123
+Fragments after: 558 54123
+Connectors: 29 Extenders: 529
+Connections and extensions in  0.472887s wall, 0.930000s user + 0.000000s system = 0.930000s CPU (196.7%)
+Contigs out: 377 Genome: 4998918 N50: 31846 L50: 48
+Assembled in  1.154286s wall, 2.260000s user + 0.000000s system = 2.260000s CPU (195.8%)
+
+
+Kmer len: 395
+Raw kmers: 1202685 Memory needed (GB): 0.161641 Memory available (GB): 29.724 1 cycle(s) will be performed
+Distinct kmers: 209306
+Kmer count in  0.179457s wall, 0.300000s user + 0.040000s system = 0.340000s CPU (189.5%)
+Uniq kmers merging in  0.005616s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (178.1%)
+Kmers branching in  0.185526s wall, 0.370000s user + 0.000000s system = 0.370000s CPU (199.4%)
+Kmer: 395 Graph size: 209306 Contigs in: 377
+Valley: 0
+
+Mark used kmers in  0.733868s wall, 1.460000s user + 0.000000s system = 1.460000s CPU (198.9%)
+Kmers in multiple/single contigs: 0 170881
+Fragments before: 319 26109
+Fragments after: 315 26109
+New seeds: 0
+New seeds in  0.043784s wall, 0.070000s user + 0.000000s system = 0.070000s CPU (159.9%)
+Fragments before: 313 25894
+Fragments after: 312 25894
+Connectors: 1 Extenders: 311
+Connections and extensions in  0.461789s wall, 0.900000s user + 0.000000s system = 0.900000s CPU (194.9%)
+Contigs out: 345 Genome: 4989743 N50: 31846 L50: 48
+Assembled in  1.240857s wall, 2.430000s user + 0.000000s system = 2.430000s CPU (195.8%)
+
+DONE

@@ -1,0 +1,60 @@
+Unable to find image 'quay.io/biocontainers/fastp:1.3.2--h43da1c4_0' locally
+1.3.2--h43da1c4_0: Pulling from biocontainers/fastp
+6786a13685ec: Pulling fs layer
+bd9ddc54bea9: Pulling fs layer
+0cacab098358: Pulling fs layer
+bd9ddc54bea9: Download complete
+0cacab098358: Download complete
+bd9ddc54bea9: Pull complete
+0cacab098358: Pull complete
+6786a13685ec: Download complete
+6786a13685ec: Pull complete
+Digest: sha256:4924981d75f4544bca85799271645ab013b76426cb2d1892a877a72875a34a73
+Status: Downloaded newer image for quay.io/biocontainers/fastp:1.3.2--h43da1c4_0
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+Read1 before filtering:
+total reads: 700949
+total bases: 52838741
+Q20 bases: 52619071(99.5843%)
+Q30 bases: 51921861(98.2648%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 700949
+total bases: 52837567
+Q20 bases: 52166934(98.7308%)
+Q30 bases: 50850921(96.2401%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 697907
+total bases: 52622934
+Q20 bases: 52427744(99.6291%)
+Q30 bases: 51751279(98.3436%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 697907
+total bases: 52620475
+Q20 bases: 52061765(98.9382%)
+Q30 bases: 50796226(96.5332%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 1395814
+reads failed due to low quality: 6084
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 322
+bases trimmed due to adapters: 5574
+
+Duplication rate: 0.831159%
+
+Insert size peak (evaluated by paired-end reads): 116
+
+JSON report: PA01.fastp.json
+HTML report: PA01.fastp.html
+
+fastp --in1 SRR28760303_1.fastq.gz --in2 SRR28760303_2.fastq.gz --out1 PA01.clean_R1.fastq.gz --out2 PA01.clean_R2.fastq.gz --thread 2 --html PA01.fastp.html --json PA01.fastp.json 
+fastp v1.3.2, time used: 3 seconds
