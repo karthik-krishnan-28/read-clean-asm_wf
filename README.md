@@ -59,8 +59,6 @@ pa-simple-wf/
 
 ## Requirements
 
-Fill in this section with the exact output from `scripts/report_versions.sh` before submission.
-
 - **Nextflow version used:** 25.10.4
 - **Package manager and version:** Docker 29.2.1 
 - **OS used:** Darwin
